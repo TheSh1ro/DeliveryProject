@@ -2,11 +2,17 @@
 <template>
   <header id="header">
     <div class="navbar"></div>
-    <span class="navbar-item">Bielz Delivery</span>
+    <RouterLink to="/" class="navbar-item">Home</RouterLink>
+    <RouterLink to="/filmes" class="navbar-item">Filmes</RouterLink>
+    <RouterLink to="/poltronas" class="navbar-item">Poltronas</RouterLink>
     <div class="navbar"></div>
   </header>
 </template>
 <style>
+* {
+  color: inherit;
+  text-decoration: inherit;
+}
 #header {
   height: 8vh;
 
@@ -16,17 +22,17 @@
   align-items: stretch;
 
   background-color: black;
-  color: white;
+  font-size: 1.2rem;
+  color: red;
 }
 .navbar-item {
   display: flex;
   align-items: center;
   cursor: pointer;
-  border-bottom: 2px solid red;
   padding-inline: 2vw;
 }
 .navbar-item:hover {
-  border-bottom: 2px solid cyan;
+  color: cyan;
 }
 .navbar {
   display: flex;
